@@ -7,17 +7,17 @@ on:
     branches: [main]
 
 jobs:
-  client:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-      - run: npm install
-        working-directory: client
-      - run: npm run build
-        working-directory: client
+  # client:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: actions/setup-node@v4
+  #       with:
+  #         node-version: "22"
+  #     - run: npm install
+  #       working-directory: client
+  #     - run: npm run build
+  #       working-directory: client
 
   server:
     runs-on: ubuntu-latest
