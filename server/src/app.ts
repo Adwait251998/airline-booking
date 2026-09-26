@@ -1,0 +1,14 @@
+import express from "express";
+import flightRouter from "./routes/flights.js";
+import passengersRouter from "./routes/passengers.js";
+import bookingsRouter from "./routes/bookings.js";
+import importRouter from "./routes/imports.js";
+const app = express();
+import cors from "cors";
+app.use(cors());
+app.use(express.json());
+app.use("/api", flightRouter);
+app.use("/api", passengersRouter);
+app.use("/api", bookingsRouter);
+app.use("/api", importRouter);
+export default app;

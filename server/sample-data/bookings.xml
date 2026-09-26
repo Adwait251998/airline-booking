@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BookingRequest>
+  <Flight>
+    <FlightNumber>AI305</FlightNumber>
+    <Origin>DEL</Origin>
+    <Destination>BLR</Destination>
+    <DepartureTime>2026-10-15T14:30:00</DepartureTime>
+    <SeatsAvailable>180</SeatsAvailable>
+  </Flight>
+  <Passenger>
+    <FullName>Rohan Mehta</FullName>
+    <PassportNumber>P9988776</PassportNumber>
+  </Passenger>
+  <Fare>
+    <Amount>5200.00</Amount>
+  </Fare>
+</BookingRequest>
